@@ -1,0 +1,54 @@
+Kiểm thử hộp đen (Black Box Testing):
+
+Tiếp cận: Trong kiểm thử hộp đen, người kiểm thử không cần biết đến cấu trúc nội bộ của mã nguồn hoặc logic của chương trình. Người kiểm thử chỉ tập trung vào đầu vào và đầu ra của hệ thống để đảm bảo rằng chức năng hoạt động đúng.
+Ưu điểm: Phù hợp cho việc kiểm thử quyết định chức năng và đảm bảo tính đầy đủ của hệ thống. Có thể thực hiện mà không cần biết chi tiết bên trong của mã nguồn.
+Nhược điểm: Không thể xác định được các lỗi ẩn trong mã nguồn và khó xác định mức độ kiểm thử đã được thực hiện.
+Kiểm thử hộp trắng (White Box Testing):
+
+Tiếp cận: Trái ngược với kiểm thử hộp đen, kiểm thử hộp trắng yêu cầu kiểm thử viên có hiểu biết về cấu trúc nội bộ của mã nguồn. Kiểm thử được thực hiện dựa trên cách mã nguồn được thiết kế và triển khai.
+Ưu điểm: Có thể xác định được các lỗi logic trong mã nguồn và kiểm soát rõ ràng hơn về mức độ kiểm thử.
+Nhược điểm: Đòi hỏi kiến thức sâu rộng về mã nguồn và không thể kiểm thử tất cả các dòng mã trong môi trường thời gian thực.
+Phổ biến và Hiệu quả:
+
+Phổ biến: Cả hai phương pháp đều phổ biến và có vai trò quan trọng trong quá trình kiểm thử phần mềm.
+Hiệu quả: Hiệu quả của mỗi phương pháp phụ thuộc vào mục tiêu kiểm thử, độ phức tạp của hệ thống, và tài nguyên có sẵn. Trong nhiều trường hợp, sự kết hợp của cả hai phương pháp (kiểm thử hộp đen và hộp trắng) được thực hiện để đảm bảo độ phủ kiểm thử toàn diện.
+Tại sao sử dụng:
+
+Kiểm thử hộp đen: Thường được sử dụng để đảm bảo chức năng và hiệu suất của hệ thống từ góc độ người dùng cuối.
+Kiểm thử hộp trắng: Thường được sử dụng để kiểm thử chi tiết logic của mã nguồn và đảm bảo mọi dòng mã đều được kiểm thử.
+Tùy thuộc vào yêu cầu cụ thể của dự án, sự kết hợp linh hoạt của cả hai phương pháp thường mang lại kết quả kiểm thử tốt nhất.
+
+
+
+
+Equivalent Partitioning:
+
+Case 1: Toán = 75, Lý = 75 (Both subjects are just above the passing threshold)
+Case 2: Toán = 85, Lý = 85 (Both subjects are above the passing threshold)
+Case 3: Toán = 60, Lý = 90 (Toán is below passing, Lý is above passing)
+Case 4: Toán = 95, Lý = 55 (Toán is above passing, Lý is below passing)
+Case 5: Toán = 80, Lý = 80 (Both subjects meet the passing threshold)
+Boundary Value Analysis:
+
+Case 6: Toán = 70, Lý = 79 (Just below the passing threshold for Lý)
+Case 7: Toán = 79, Lý = 70 (Just below the passing threshold for Toán)
+Case 8: Toán = 70, Lý = 80 (Just above the passing threshold for Lý)
+Case 9: Toán = 80, Lý = 70 (Just above the passing threshold for Toán)
+Case 10: Toán = 100, Lý = 100 (Highest possible scores)
+Case 11: Toán = 0, Lý = 0 (Lowest possible scores)
+Decision Table:
+
+Conditions:
+
+Toán Passing (Yes/No)
+Lý Passing (Yes/No)
+Average of Two Subjects >= 80 (Yes/No)
+Actions:
+
+Pass (Yes/No)
+Test Cases:
+
+Case 12: Toán Passing = Yes, Lý Passing = Yes, Average >= 80 → Pass = Yes
+Case 13: Toán Passing = No, Lý Passing = Yes, Average >= 80 → Pass = No
+Case 14: Toán Passing = Yes, Lý Passing = No, Average >= 80 → Pass = No
+Case 15: Toán Passing = No, Lý Passing = No, Average >= 80 → Pass = No
