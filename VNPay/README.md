@@ -1,7 +1,7 @@
 # An Internet Media Store
 
 <p align="center">
-  <img src="assets/images/aims_cover_image.png" />
+  <img src="assets/images/Logo.png" />
 </p>
 
 ## Getting Started
